@@ -134,50 +134,6 @@ input, textarea, select{ font-family: inherit; }
 }
 
 /* ==========================================================
-   SHOP BY CATEGORY — image tiles
-   ========================================================== */
-.cat-showcase-wrap{
-  max-width: 1180px;
-  margin: 48px auto 0;
-  padding: 0 24px;
-}
-.cat-showcase-title{
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: var(--gold-bright);
-  margin: 0 0 18px;
-}
-.cat-showcase-grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
-}
-@media (max-width: 700px){
-  .cat-showcase-grid{ grid-template-columns: repeat(2, 1fr); }
-}
-.cat-tile{
-  background: var(--ink-card);
-  border: 1px solid var(--line-gold-soft);
-  border-radius: 4px;
-  padding: 0;
-  overflow: hidden;
-  cursor: pointer;
-  text-align: left;
-  transition: border-color 0.15s, transform 0.15s;
-}
-.cat-tile:hover{ border-color: var(--gold-bright); transform: translateY(-2px); }
-.cat-tile-media{ display: block; aspect-ratio: 1/1; overflow: hidden; background: var(--ink-soft); }
-.cat-tile-media img{ width: 100%; height: 100%; object-fit: cover; }
-.cat-tile-label{
-  display: block;
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  color: var(--cream);
-  padding: 10px 14px 14px;
-}
-
-/* ==========================================================
    CATEGORY NAV
    ========================================================== */
 .cat-nav{
@@ -223,9 +179,7 @@ input, textarea, select{ font-family: inherit; }
 @media (max-width: 900px){
   .product-grid{ grid-template-columns: repeat(2, 1fr); }
 }
-@media (max-width: 560px){
-  .product-grid{ grid-template-columns: 1fr; }
-}
+/* 560px wala rule hata diya — mobile pe bhi hamesha 2 columns rahenge */
 
 .product-card{
   background: var(--ink-card);
